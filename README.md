@@ -1,7 +1,6 @@
-# faceid
+# FaceId
 
-A new Flutter plugin project.
-
+A Flutter plugin to easily use Biometrical authentication.
 ## Getting Started
 
 This project is a starting point for a Flutter
