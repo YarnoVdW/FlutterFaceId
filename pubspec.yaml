@@ -1,7 +1,8 @@
 name: faceid
-description: "A new Flutter plugin project."
+description: "Flutter plugin for Face ID and Touch ID authentication. This plugin uses the LocalAuthentication package to authenticate users with Face ID or Touch ID on iOS"
 version: 0.0.1
-homepage:
+homepage: https://github.com/YarnoVdW/FlutterFaceId
+repository: https://github.com/YarnoVdW/FlutterFaceId
 
 environment:
   sdk: '>=3.3.0 <4.0.0'

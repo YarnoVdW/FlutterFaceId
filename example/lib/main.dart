@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 import 'package:flutter/services.dart';
@@ -26,7 +28,7 @@ class _MyAppState extends State<MyApp> {
         _isAuthenticated = isAuthenticated;
       });
     } on PlatformException catch (e) {
-      print('Error: ${e.message}');
+      log('Failed to authenticate: ${e.message}', error: e);
     }
   }
 
