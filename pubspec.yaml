@@ -1,4 +1,4 @@
-name: faceid
+name: biometric_auth
 description: "Flutter plugin for Face ID and Touch ID authentication. This plugin uses the LocalAuthentication package to authenticate users with Face ID or Touch ID on iOS"
 version: 0.0.1
 homepage: https://github.com/YarnoVdW/FlutterFaceId
@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
+  rename: ^3.0.2
 
 dev_dependencies:
   flutter_test:
