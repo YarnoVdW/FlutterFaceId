@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:faceid/faceid_platform_interface.dart';
-import 'package:faceid/faceid_method_channel.dart';
+import 'package:biometric_auth/faceid_platform_interface.dart';
+import 'package:biometric_auth/faceid_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockFaceidPlatform
