@@ -7,9 +7,10 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockFaceidPlatform
     with MockPlatformInterfaceMixin
     implements FaceidPlatform {
-
   @override
-  Future<String?> getPlatformVersion() => Future.value('42');
+  Future<bool> authenticate() {
+    return Future.value(true);
+  }
 }
 
 void main() {
@@ -17,13 +18,5 @@ void main() {
 
   test('$MethodChannelFaceid is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelFaceid>());
-  });
-
-  test('getPlatformVersion', () async {
-    Faceid faceidPlugin = Faceid();
-    MockFaceidPlatform fakePlatform = MockFaceidPlatform();
-    FaceidPlatform.instance = fakePlatform;
-
-    expect(await faceidPlugin.getPlatformVersion(), '42');
   });
 }

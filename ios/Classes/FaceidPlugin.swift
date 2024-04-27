@@ -26,24 +26,13 @@ public class FaceidPlugin: NSObject, FlutterPlugin {
             let reason = "Authenticate to access your data"
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, error in
                 if success {
-                    result("Authenticated successfully")
-                } else {
-                    if let error = error as? LAError {
-                        switch error.code {
-                        case .authenticationFailed:
-                            result("Authentication failed")
-                        case .userCancel:
-                            result("User cancelled authentication")
-                        case .biometryLockout:
-                            result("Biometry locked out")
-                        default:
-                            result("Authentication failed")
-                        }
-                    }
+                    result(true)
+                } else { 
+                    result(false)
                 }
             }
         } else {
-            result("Biometric authentication not available")
+            result(false)
         }
         
     }

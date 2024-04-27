@@ -23,7 +23,6 @@ abstract class FaceidPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
-  }
+  /// Authenticates the user using Face ID.
+  Future<bool> authenticate();
 }
