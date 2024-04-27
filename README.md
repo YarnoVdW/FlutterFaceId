@@ -12,7 +12,8 @@ Leveraging Swift for iOS, this plugin harnesses the power of Touch ID and Face I
 * Easy Integration: Simplified Flutter plugin architecture allows for easy integration into existing Flutter projects, reducing development time and effort.
 
 # Before use:
-Add ```<key>NSFaceIDUsageDescription</key>
-	<string>Face ID authentication</string>```
+Add ``` <key>NSFaceIDUsageDescription</key>
+
+	<string>Face ID authentication</string> ```
  to info.plist file in ios folder to give the app access to biometric authentication.
 
